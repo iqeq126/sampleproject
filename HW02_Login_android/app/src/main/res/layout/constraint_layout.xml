@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="warm_white"
+    >
+
+    <EditText
+        android:id="@+id/login_header"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/login_header"
+        android:textSize="25sp"
+        android:background="@color/purple_5"
+        android:textColor="@color/warm_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/koreatech_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/koreatech_symbol"
+        android:layout_marginTop="@string/image_margin"
+        android:layout_marginBottom="@string/image_margin"
+        android:layout_above="@id/login_id"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_header"
+        />
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="@string/input_width"
+        android:layout_height="@string/input_height"
+        android:layout_centerInParent="true"
+        android:hint="@+string/login_id"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/koreatech_symbol"
+        app:layout_constraintStart_toStartOf="@+id/koreatech_symbol"
+        app:layout_constraintTop_toBottomOf="@+id/koreatech_symbol"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="@string/input_width"
+        android:layout_height="@string/input_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:inputType="textPassword"
+        android:hint="@string/login_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_id"
+        />
+
+    <Button
+        android:id="@+id/login_submit"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:text="@string/login_submit"
+        app:layout_constraintEnd_toEndOf="@+id/login_password"
+        app:layout_constraintStart_toStartOf="@+id/login_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        />
+
+    <TextView
+        android:id="@+id/find_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="@string/find_password"
+        android:layout_below="@+id/login_submit"
+        android:layout_weight="0.5"
+        app:layout_constraintStart_toStartOf="@+id/login_submit"
+        app:layout_constraintTop_toBottomOf="@+id/login_submit"
+        />
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        app:layout_constraintEnd_toEndOf="@+id/login_submit"
+        app:layout_constraintTop_toBottomOf="@+id/login_submit"
+        android:textSize="24sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
