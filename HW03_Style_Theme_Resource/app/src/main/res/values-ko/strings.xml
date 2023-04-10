@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">로그인 앱 </string>
+    <string name="login_header">로그인 페이지</string>
+    <!-- Strings related to login -->
+    <string name="login_id">아이디를 입력해주세요. </string>
+    <string name="login_password">********</string>
+    <string name="login_submit">로그인</string>
+    <string name="find_password">비밀번호 찾기</string>
+    <string name="sign_up">회원가입</string>
+    <string name="input_height">50sp</string>
+    <string name="input_width">300sp</string>
+    <string name="image_margin">25sp</string>
+
+</resources>
