@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "My Application_Chowonseok"
+rootProject.name = "HW04_Activity_View"
 include ':app'
